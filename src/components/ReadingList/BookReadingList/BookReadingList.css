@@ -1,0 +1,29 @@
+.ul-reading-list {
+    background: rgba(220, 228, 245, 0.421);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 20px;
+    border-radius: 10px;
+
+    & li {
+        text-align: center;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px;
+        gap: 10px;
+
+        & .pages {
+            margin: 0;
+        }
+
+        & img {
+            width: 100px;
+        }
+    }
+}
+

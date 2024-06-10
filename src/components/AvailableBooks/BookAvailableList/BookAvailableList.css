@@ -1,0 +1,30 @@
+.ul-available-books {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+
+    & li {
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px;
+        gap: 10px;
+
+        & .pages {
+            margin: 0;
+        }
+
+        & img {
+            width: 150px;
+            height: auto;
+        }
+    }
+}
+
