@@ -1,9 +1,12 @@
 import { createContext, useState, useEffect } from 'react'
 import { library } from '../books/book.json'
+import { getBooks } from '../services/getBooks'
 
 export const BookContext = createContext()
 
 export const BookProvider = ({ children }) => {
+  const { library } = getBooks()
+
   const [readingList, setReadingList] = useState(() => {
     const readingListFromLS = window.localStorage.getItem('readingList')
     return readingListFromLS ? JSON.parse(readingListFromLS) : []
